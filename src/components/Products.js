@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import CardFormation from './CardFormation.js';
+import CardFormation from './CardFormation';
 import './Card.css'
 
 const fetchData = async () => {
@@ -19,6 +19,7 @@ const FurnitureData = () => {
     getData();
   }, []);
   return (
+    <div className='container'>
       <div className="card-list">
         {furnitureData.map((item) => (
           <CardFormation
@@ -28,6 +29,7 @@ const FurnitureData = () => {
           price={item.retailPrice}          />
         
         ))}
+      </div>
     </div>
   )
 };
