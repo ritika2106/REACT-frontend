@@ -17,9 +17,8 @@
 
     .hero {
         margin-top: 10px;
-        margin-bottom: 15px;
         object-fit: cover;
-        height: 100vh;
+        height: 102vh;
         width: 100%;
     }
   } 

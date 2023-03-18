@@ -22,9 +22,10 @@ const FurnitureData = () => {
     //Using spread operator instead of concat to not create a new array every time
     const updatedCart = [...itemsInCart, item];
     const updatedTotal = allItemsTotal + item.retailPrice;
-
+    
     setItemsInCart(updatedCart);
-    setItemsTotal(updatedTotal)
+    setItemsTotal(updatedTotal);
+    alert(`The cart total now is ${updatedTotal} and there are ${updatedCart.length} item(s) in the cart`)
   }
 
   const [furnitureData, setFurnitureData] = useState([]);
