@@ -1,5 +1,5 @@
 import HeroImg from './components/HeroImg.js';
-import FurnitureData from './components/Products.js';
+import FurnitureData from './components/Furniture.js';
 
 function App() {
   return (
